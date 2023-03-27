@@ -1,0 +1,324 @@
+* {
+  /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+  border-radius: 13px;
+  z-index: 5;
+}
+ion-icon {
+  color: black;
+  /* background-color: yellow; */
+}
+.red {
+  color: red;
+}
+/* utility CSS Properties */
+.h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  /* color: white; */
+}
+
+.grey {
+  background-color: rgb(224 228 228);
+}
+
+.item {
+  background-color: white;
+  /* background-color: rgb(211, 196, 196); */
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 124vh;
+  background-image: linear-gradient(rgb(126, 76, 149), rgb(198 130 198));
+}
+
+/* second main Container */
+.secondMainContainer {
+  height: 118vh;
+  display: flex;
+  padding: 1rem;
+  width: 88vw;
+  /* align-items: center; */
+  justify-content: center;
+  /* background-color: rgb(231, 95, 211); */
+}
+.subcontainer {
+  max-width: 82vw;
+  height: 113vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "item1 item2 item2 item2 item3"
+    "item4 item5 item5 item5 item6";
+}
+
+.item2 {
+  background-color: rgb(224 228 228);
+  display: grid;
+  grid-gap: 1rem;
+  /* width: 50vw; */
+  grid-template-areas:
+    "subItem1 subItem1 subItem1 subItem1"
+    "middle1 middle1 middle2 middle2"
+    "middle1 middle1 middle2 middle2"
+    "subItem2 subItem2 subItem3 subItem3"
+    "subItem2 subItem2 subItem3 subItem3"
+    "subItem2 subItem2 subItem3 subItem3"
+    "subItem2 subItem2 subItem3 subItem3";
+}
+.subItem {
+  height: 100%;
+  width: 100%;
+}
+
+.subItem1 {
+  grid-area: subItem1;
+}
+.subItem2 {
+  grid-area: subItem2;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* height: 500px; */
+  width: 465px;
+}
+.subItem3 {
+  grid-area: subItem3;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* height: 500px; */
+  width: 465px;
+}
+.middle1 {
+  grid-area: middle1;
+}
+.middle2 {
+  grid-area: middle2;
+}
+
+/* navigation part */
+.navContainer {
+  /* padding: 1rem 0; */
+  display: grid;
+  column-gap: 2rem;
+  background-color: rgb(224 228 228);
+  grid-template-columns: auto 11% 11%;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  border-radius: 13px;
+  justify-content: center;
+  background-color: white;
+}
+
+.navItem1 input {
+  height: 100%;
+  border-radius: 1.1rem;
+  border: none;
+}
+
+.noneBorder {
+  border: none;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+/* finance part */
+.graphHeading1 {
+  padding: 2rem;
+  margin-top: -2.5rem;
+}
+
+.Finance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  /* background-image: linear-gradient(rgb(126, 76, 149), rgb(198 130 198)); */
+  background-image: linear-gradient(rgb(142 16 200 / 88%), rgb(213 181 213));
+
+  height: 100%;
+}
+.middle1 {
+  background-image: linear-gradient(rgb(15 20 110), rgb(198 130 198));
+}
+
+.subFinanceContainer {
+  width: 90%;
+  margin: auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.margin-8 {
+  margin-left: 11px;
+}
+.counts {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+/* inside dashboard */
+.item1 {
+  display: flex;
+  flex-direction: column;
+  width: 14vw;
+  align-items: center;
+  background-color: white;
+}
+
+.innerDashboard {
+  display: flex;
+  width: 42%;
+  margin: 1rem;
+  align-items: center;
+  /* background-color: rgb(123, 232, 178); */
+}
+
+.dash {
+  background-color: white;
+  display: flex;
+  width: 99%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+hr {
+  width: 72%;
+}
+
+.dashboardNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Finance Target Section */
+.mainGraphContainer {
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  /* gap: 2rem 4rem; */
+  flex-direction: column;
+  align-items: center;
+}
+.mainGraphContainer > div {
+  padding: 2rem;
+}
+
+.mainGraphContainer2 {
+  justify-content: center;
+  height: 100%;
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finaceHeader {
+  display: flex;
+}
+
+.finaceHeader1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* for result and process */
+.result-process {
+  justify-content: space-around;
+  display: flex;
+  width: 90%;
+}
+
+/* right side's profile */
+.cardProfile {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.cardProfile > img {
+  width: 5rem;
+  margin: m;
+  margin: 4.5px;
+}
+
+.pfpTitle {
+  width: inherit;
+  display: block;
+  margin: auto;
+  margin-top: -2rem;
+}
+
+.pfpButtonContainer {
+  justify-content: center;
+  display: flex;
+}
+
+.pfpButtonContainer > button {
+  width: 5rem;
+  margin: 2.5px;
+}
+
+
+/* send money */
+.send-money{
+  font-size: 23px;
+  font-weight: 700;
+  font-family: sans-serif;
+  /* margin: 2rem; */
+}
+
+/* .send-money0{
+  margin: 2rem;
+}
+
+.send-money1{
+  margin: 2rem;
+} */
+
